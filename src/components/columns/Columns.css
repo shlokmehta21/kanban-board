@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  gap: 20px;
+}
+
+.todo {
+  height: 500px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  transition: 0.2s;
+  background-color: rgb(237, 237, 237);
+}
+
+.inProgress {
+  height: 500px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  transition: 0.3s;
+  background-color: rgb(237, 237, 237);
+}
+
+.completed {
+  height: 500px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  transition: 0.2s;
+  background-color: rgb(237, 237, 237);
+}
+
+.columnTitle {
+  margin-bottom: 15px;
+}
+
+.dragActive {
+  background-color: rgb(196, 196, 196);
+}
+
+@media (max-width: 1020px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 395px) {
+  .container {
+    width: 75%;
+  }
+}
